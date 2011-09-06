@@ -40,6 +40,17 @@
                     <encoding>UTF-8</encoding>
                 </source-folder>
                 <source-folder>
+                    <label>portal-web\docroot</label>
+                    <type>doc_root</type>
+                    <location>portal-web/docroot</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>portal-web\docroot\WEB-INF</label>
+                    <type>web_inf</type>
+                    <location>portal-web/docroot/WEB-INF</location>
+                </source-folder>
+                <source-folder>
                     <label>portal-web\test</label>
                     <type>java</type>
                     <location>portal-web/test</location>
@@ -105,6 +116,14 @@
             </ide-actions>
             <view>
                 <items>
+                    <source-folder style="tree">
+                        <label>portal-web\docroot</label>
+                        <location>portal-web/docroot</location>
+                    </source-folder>
+                    <source-folder style="tree">
+                        <label>portal-web\docroot\WEB-INF</label>
+                        <location>portal-web/docroot/WEB-INF</location>
+                    </source-folder>
                     <source-folder style="packages">
                         <label>portal-impl\src</label>
                         <location>portal-impl/src</location>
@@ -177,5 +196,14 @@
                 <source-level>1.5</source-level>
             </compilation-unit>
         </java-data>
+        <web-data xmlns="http://www.netbeans.org/ns/freeform-project-web/2">
+            <web-module>
+                <doc-root>portal-web/docroot</doc-root>
+                <web-inf>portal-web/docroot/WEB-INF</web-inf>
+                <classpath />
+                <context-path>/</context-path>
+                <j2ee-spec-level>1.5</j2ee-spec-level>
+            </web-module>
+        </web-data>
     </configuration>
 </project>
